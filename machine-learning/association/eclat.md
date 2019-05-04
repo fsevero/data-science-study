@@ -22,4 +22,6 @@ plot(rules, method="graph", control=list(type="items"))
 ## Using Python
 
 ```python
+# https://github.com/Vachik-Dave/Data-Mining/tree/master/Eclat%20Algorithm%20in%20Python
+# Is There no oficial eclat function?
 ```
