@@ -17,6 +17,7 @@ rules = apriori(transactions, parameter=list(supp=0.5, conf=0.5))
 inspect(rules)
 
 install.packages("arulesViz")
+library(arulesViz)
 plot(rules)
 plot(rules, method="graph", control=list(type="items"))
 ```
