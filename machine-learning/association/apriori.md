@@ -25,4 +25,17 @@ plot(rules, method="graph", control=list(type="items"))
 ## Using python
 
 ```python
+import pandas as pd
+# pip install apyori
+from apyori import apriori
+
+data = pd.read_csv('transactions.txt', header=None)
+
+# this doesn't seems right :/
+transactions = []
+for i in range(6):
+    transactions.append([str(data.values[i,j]) for j in range(3)])
+
+rules = apriori(transactions, min_support=0.5, min_confidence=0.5)
+# how to use it?
 ```
